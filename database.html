@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM - Customer Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Database</h1>
+        
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search by name, number, or date">
+            <button id="searchBtn" class="btn">Search</button>
+            <button id="resetBtn" class="btn">Reset</button>
+        </div>
+        
+        <table id="customerTable">
+            <thead>
+                <tr>
+                    <th>Sr. No</th>
+                    <th>Customer Name</th>
+                    <th>Number</th>
+                    <th>Address</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="customerTableBody">
+                <!-- Will be filled by JavaScript -->
+            </tbody>
+        </table>
+        
+        <div class="actions">
+            <a href="index.html" class="btn">New Customer</a>
+            <a href="summary.html" class="btn">Income Summary</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
