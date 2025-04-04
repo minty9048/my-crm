@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM - Billing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Billing/Service Page</h1>
+        
+        <div class="customer-info">
+            <h3>Customer Information</h3>
+            <p><strong>Name:</strong> <span id="displayName"></span></p>
+            <p><strong>Number:</strong> <span id="displayNumber"></span></p>
+            <p><strong>Address:</strong> <span id="displayAddress"></span></p>
+        </div>
+        
+        <div class="services">
+            <h3>Services Availed</h3>
+            <table id="servicesTable">
+                <thead>
+                    <tr>
+                        <th>Service Name</th>
+                        <th>Charges (₹)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="service-name" placeholder="Service 1"></td>
+                        <td><input type="number" class="service-charge" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="service-name" placeholder="Service 2"></td>
+                        <td><input type="number" class="service-charge" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="service-name" placeholder="Service 3"></td>
+                        <td><input type="number" class="service-charge" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="service-name" placeholder="Service 4"></td>
+                        <td><input type="number" class="service-charge" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="service-name" placeholder="Service 5"></td>
+                        <td><input type="number" class="service-charge" placeholder="0"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="totals">
+            <div class="form-group">
+                <label for="grandTotal">Grand Total:</label>
+                <input type="number" id="grandTotal" readonly>
+            </div>
+            
+            <div class="form-group">
+                <label for="discount">Discount (₹):</label>
+                <input type="number" id="discount" value="0" min="0">
+            </div>
+            
+            <div class="form-group">
+                <label for="finalTotal">Final Total:</label>
+                <input type="number" id="finalTotal" readonly>
+            </div>
+        </div>
+        
+        <div class="actions">
+            <button id="calculateBtn" class="btn">Calculate Total</button>
+            <button id="printBtn" class="btn">Print Bill</button>
+            <button id="saveBtn" class="btn">Save as PDF</button>
+            <button id="saveCustomerBtn" class="btn">Save Customer</button>
+            <a href="index.html" class="btn">Back to Entry</a>
+            <a href="summary.html" class="btn">Income Summary</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
