@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM - Entry Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Entry</h1>
+        <form id="customerForm">
+            <div class="form-group">
+                <label for="entityName">Name of Entity:</label>
+                <input type="text" id="entityName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="todayDate">Today's Date:</label>
+                <input type="text" id="todayDate" readonly>
+            </div>
+            
+            <div class="form-group">
+                <label for="customerName">Name:</label>
+                <input type="text" id="customerName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phoneNumber">Number:</label>
+                <input type="tel" id="phoneNumber" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" rows="3" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
